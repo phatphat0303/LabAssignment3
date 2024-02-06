@@ -12,7 +12,7 @@ function validateForm(event) {
         hasFence: document.getElementById('fence').checked,
     };
 
-    // Custom error messages
+    // error messages
     const errors = validateFields(formData);
 
     // Display errors or submit the form
@@ -26,29 +26,25 @@ function validateForm(event) {
 function validateFields(data) {
     const errors = [];
 
-    // Validation for 'First Name'
     if (data.firstName === '') {
         errors.push('Please enter your first name.');
     } else if (!isValidName(data.firstName)) {
         errors.push('Invalid characters in the first name.');
     }
 
-    // Validation for 'Email'
     if (data.email === '' || !isValidEmail(data.email)) {
         errors.push('Please enter a valid email address.');
     }
 
-    // Validation for 'Phone Number'
+
     if (data.phone === '' || !isValidPhoneNumber(data.phone)) {
         errors.push('Please enter a valid phone number.');
     }
 
-    // Validation for 'Home Status'
+
     if (data.homeStatus === '') {
         errors.push('Please select your home status.');
     }
-
-    // Additional validations...
 
     return errors;
 }
