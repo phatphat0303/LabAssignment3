@@ -9,42 +9,34 @@
 <body>
     <header>
         <div class="logo">
-            <!-- Animal Rescue Logo -->
+  
             <img src="animal-rescue-illustration-vector-art-logo-simple-unique-various-purposes-best-use-107981984.webp" alt="Animal Rescue Logo">
         </div>
         <div class="title">
-            <!-- Page Title -->
+
             <h1>Animal Rescue Adoption Form</h1>
         </div>
     </header>
 
     <main>
-        <!-- Pet Adoption Form Section -->
+   
         <section id="petadoptionForm">
             <h2>Pet Adoption Application Form</h2>
-            <!-- Adoption Form -->
-            <form onsubmit="validateForm(event)">
-                <!-- Form Questions -->
 
-                <!-- First Name -->
+            <form onsubmit="validateForm(event)">
+
                 <div class="form-question">
                     <label for="firstName">First Name:</label>
                     <input type="text" id="firstName" required>
                 </div>
-
-                <!-- Email Address -->
                 <div class="form-question">
                     <label for="email">Email Address:</label>
                     <input type="email" id="email" required>
                 </div>
-
-                <!-- Phone Number -->
                 <div class="form-question">
                     <label for="phone">Phone Number:</label>
                     <input type="tel" id="phone" required>
                 </div>
-
-                <!-- Home Status -->
                 <div class="form-question">
                     <label for="homeStatus">Home Status:</label>
                     <select id="homeStatus" required>
@@ -52,26 +44,19 @@
                         <option value="apartment">Apartment</option>
                     </select>
                 </div>
-
-                <!-- Kids Question -->
                 <div class="form-question">
                     <label for="kids">Do you have kids? If yes, how many?</label>
                     <input type="number" id="kids" min="0">
                 </div>
-
-                <!-- Pets Question -->
                 <div class="form-question">
                     <label for="pets">Do you have other pets? If yes, how many?</label>
                     <input type="number" id="pets" min="0">
                 </div>
-
-                <!-- Fence Question -->
                 <div class="form-question">
                     <label for="fence">Do you have a fence?</label>
                     <input type="checkbox" id="fence">
                 </div>
 
-                <!-- Submit Button -->
                 <button type="submit">Submit Application</button>
             </form>
         </section>
